@@ -1,0 +1,68 @@
+.favoritesScreen {
+  padding: 20px;
+}
+
+.favoritesScreen h1 {
+  margin-bottom: 30px;
+}
+
+.favoritesScreen__movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.favoritesScreen__movie {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.favoritesScreen__movie img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 500ms;
+}
+.favoritesScreen__movie img:hover {
+  transform: scale(1.05); 
+}
+
+.favoritesScreen__movieInfo h3 {
+  margin: 15px 0px 0px 0px;
+  font-size: 20px;
+}
+
+.favoritesScreen__movieInfo p {
+  margin: 10px 0px 10px 0px;
+  font-size: 16px;
+  color: #999;
+}
+
+.clearFavoritesButton {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.clearFavoritesButton:hover {
+  background-color: #f40612;
+}
+
+.removeButton {
+  padding: 5px 10px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.removeButton:hover {
+  background-color: #c9302c;
+}

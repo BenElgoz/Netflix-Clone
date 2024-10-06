@@ -1,0 +1,186 @@
+.movieDetailsScreen {
+  color: white;
+  padding: 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.movieDetailsScreen__header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.movieDetailsScreen__header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.movieDetailsScreen__header img {
+  width: 100%;
+  height: 600px; 
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(75%); 
+}
+
+.movieDetailsScreen__headerContent {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  position: absolute;
+  bottom: 50px; 
+  left: 20px;
+  color: white;
+  width: 60%; 
+  z-index: 2;
+}
+
+.movieDetailsScreen__headerContent h1 {
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffcc00; 
+  font-size: 3rem; 
+  margin-bottom: 15px; 
+  font-weight: bold;
+}
+
+.movieDetailsScreen__headerContent p {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 15px; 
+  width: 100%;
+  overflow-y: auto; 
+}
+
+.movieDetailsScreen__info {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+  justify-content: space-between; 
+}
+
+.movieDetailsScreen__info strong {
+  color: #ffcc00; 
+}
+
+
+.movieDetailsScreen__additionalInfo {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movieDetailsScreen__additionalInfo h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  border-bottom: 2px solid #e50914; 
+  padding-bottom: 5px;
+}
+
+.movieDetailsScreen__additionalInfo ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.movieDetailsScreen__additionalInfo li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.movieDetailsScreen__additionalInfo li strong {
+  color: #ffcc00; 
+}
+
+.movieDetailsScreen__additionalInfo li span {
+  color: #00b894; 
+}
+
+.movieDetailsScreen__review {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #ccc;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.movieDetailsScreen__review h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.movieDetailsScreen__review p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.castList {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; 
+}
+
+.castItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px; 
+  text-align: center;
+}
+
+.actorPhoto {
+  width: 100px; 
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease; 
+}
+
+.actorPhoto:hover {
+  transform: scale(1.1); 
+}
+
+.actorInfo {
+  font-size: 1rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actorInfo strong {
+  font-size: 1.1rem; 
+}
+
+.actorInfo span {
+  font-size: 1rem;
+  color: #00b894; 
+}
+
+.actorInfo .role {
+  font-size: 1rem;
+  color: #ffcc00; 
+}
+
+.noPhoto {
+  width: 100px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #ccc;
+}

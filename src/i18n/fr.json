@@ -1,0 +1,20 @@
+{
+    "navbar": {
+      "home": "Accueil",
+      "favorites": "Ma Liste",
+      "language": "Langue"
+    },
+    "homeScreen": {
+      "welcome": "Bienvenue"
+    },
+    "favoritesScreen": {
+      "title": "Ma Liste",
+      "noFavorites": "Vous n'avez ajouté aucun film à votre liste."
+    },
+    "searchResultsScreen": {
+      "addToFavorites": "Ajouter aux Favoris",
+      "removeFromFavorites": "Retirer des Favoris",
+      "noMoviesFound": "Aucun film trouvé."
+    }
+  }
+  

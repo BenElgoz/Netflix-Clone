@@ -1,0 +1,169 @@
+.row {
+  position: relative;
+  padding: 0px 60px 0px 70px; 
+  margin-bottom: 50px; 
+  max-height: 350px;
+}
+
+.row h2 {
+  font-size: 1.8rem; 
+  color: #fff; 
+  margin-bottom: 25px;
+  font-weight: normal; /* Pas en gras */
+  text-align: left; 
+  position: relative;
+}
+
+.row__poster {
+  max-height: 280px;
+  object-fit: contain;
+  transition: transform 200ms ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.row__poster:hover {
+  transform: scale(1.15); 
+}
+
+/* Flèches de navigation */
+.slick-prev, .slick-next {
+
+  z-index: 2;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background: none !important; 
+  border: none !important; 
+  position: absolute;
+  top: 50% !important; 
+  transform: translate(0, -50%) !important; 
+}
+
+.slick-prev {
+  left: -50px !important; 
+}
+
+.slick-next {
+  right: -20px !important; 
+}
+
+.slick-prev::before, .slick-next::before {
+  font-size: 40px !important; 
+  color: white !important; 
+}
+
+
+
+
+
+
+
+
+.modal {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+  max-width: 800px;
+  width: 90%;
+  max-height: 75vh; 
+  overflow-y: auto; /* Ajouter du défilement si le contenu dépasse */
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1440px) {
+  .modal {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal {
+    max-width: 600px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    max-width: 500px;
+    padding: 10px;
+  }
+}
+
+.modal__banner {
+  max-height: 250px; 
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+.modal__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal__details p {
+  margin: 5px 0;
+  margin-bottom: 15px;
+}
+
+.modal__addButton {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal__addButton:hover {
+  background-color: #00a381;
+}
+
+.modal__closeButton {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal__closeButton:hover {
+  background-color: #f40612;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
